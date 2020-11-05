@@ -20,13 +20,15 @@ public class Produto {
 	private long id;
 
 	@NotNull
-	@Size(max = 70)
+	@Size(min = 3, max = 100)
 	private String nome;
 
 	@NotNull
+	@Size(min = 3, max = 300)
 	private String descricao;
 	
 	@NotNull
+	@Size(min = 3, max = 100)
 	private String nivel;
 
 	@NotNull
