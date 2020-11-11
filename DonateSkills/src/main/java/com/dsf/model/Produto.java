@@ -28,8 +28,7 @@ public class Produto {
 	private String descricao;
 	
 	@NotNull
-	@Size(min = 3, max = 100)
-	private String nivel;
+	private String link;
 
 	@NotNull
 	@ManyToOne
@@ -80,4 +79,13 @@ public class Produto {
 	public void setCriador(Usuario criador) {
 		this.criador = criador;
 	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
+	
 }
